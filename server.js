@@ -2,7 +2,9 @@ const exp=require('express');
 const app=exp()
 const cors=require('cors');
 app.use(cors({
-   // origin:'http://localhost:5173'
+    origin:'https://mern-deploy-client-4hln0qeyp-rajeshthappetas-projects.vercel.app',
+    methods:['GET',"POST","PUT","DELETE"],
+    credentials:true
 }))
 require('dotenv').config()
 const port=3000 || env.process.PORT;
