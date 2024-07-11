@@ -2,7 +2,7 @@ const exp=require('express');
 const app=exp()
 const cors=require('cors');
 app.use(cors({
-    origin:'https://mern-deploy-client-4hln0qeyp-rajeshthappetas-projects.vercel.app',
+    origin:'https://mern-deploy-client.vercel.app',
     methods:['GET',"POST","PUT","DELETE"],
     credentials:true
 }))
