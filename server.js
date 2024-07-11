@@ -13,4 +13,4 @@ app.get('/users',(req,res)=>{
     res.send({message:"users",payload:[{id:1,name:"ravi"},{id:2,name:"manohar"}]})
 })
 
-app.listen(port,console.log(`server on port ${port}`))
+app.listen(port,()=>console.log(`server on port ${port}`))
